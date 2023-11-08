@@ -1,7 +1,7 @@
 
 import './App.css';
+import ListaDeTareas from './componentes/ListaDeTareas.js';
 import MostrarLogo from './componentes/MostrarLogo.js';
-import TareaFormulario from './componentes/TareaFormulario.js';
 
 
 
@@ -10,7 +10,8 @@ function App() {
     <div className='aplicacion-tareas'>
       <MostrarLogo />
       <div className='tareas-lista-principal'>
-        <TareaFormulario />
+        <h1>Mis Tareas</h1>
+        <ListaDeTareas />
       </div>
     </div>
   );
