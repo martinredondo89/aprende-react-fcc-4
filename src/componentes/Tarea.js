@@ -1,6 +1,7 @@
-import React from 'react';
-import '../hojas-de-estilo/Tarea.css'
+
+import '../hojas-de-estilo/Tarea.css';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
+
 
 function Tarea({ id, texto, completada, completarTarea, eliminarTarea }) {
     return (
@@ -14,6 +15,6 @@ function Tarea({ id, texto, completada, completarTarea, eliminarTarea }) {
                 <AiOutlineCloseCircle className='tarea-icono' />
             </div>
         </div>
-    )
-}
+    );
+};
 export default Tarea;

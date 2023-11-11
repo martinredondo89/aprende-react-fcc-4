@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import '../hojas-de-estilo/TareaFormulario.css'
+import { useState } from 'react';
+import '../hojas-de-estilo/TareaFormulario.css';
 import { v4 as uuidv4 } from 'uuid';
 function TareaFormulario(props) {
     
-    const [input, setInput] = useState('')
+    const [input, setInput] = useState('');
 
     const manejarCambio = e => {
         setInput(e.target.value);
         console.log(e.target.value);
-    }
+    };
     
     const manejarEnvio = e => {
         /*Que no se vuelva a cargar todo el form */
@@ -19,10 +19,10 @@ function TareaFormulario(props) {
             id: uuidv4(),
             texto: input,
             completada: false
-        }
+        };
         console.log(tareaNueva);
-        props.onSubmit(tareaNueva)
-    }
+        props.onSubmit(tareaNueva);
+    };
     
     
     return (
@@ -39,6 +39,6 @@ function TareaFormulario(props) {
                 Agregar tarea
             </button>
         </form>
-    )
-}
+    );
+};
 export default TareaFormulario;
